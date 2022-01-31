@@ -6,9 +6,20 @@ body {
     width: 100vw;
 
 }
+.screens {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .designScreen1 {
-    background-color: green;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     height: 100vh;
     width: 100vw;

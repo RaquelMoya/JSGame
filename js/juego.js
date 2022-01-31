@@ -26,3 +26,16 @@ const cambiaPantalla = (cambio) => {
 //Algoritmo
 
 //Se puede hacer con un While que salga del bucle cuando el coche llegue a completar x metros.
+
+const funciones = {
+    
+    minMax: (n, min, max) => {
+        //min and max limiter..
+        return Math.max (Math.min (n, max), min);
+    },
+    random(min, max){
+        //random creation of a number..
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+    
+}
