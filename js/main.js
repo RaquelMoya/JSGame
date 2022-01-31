@@ -1,38 +1,37 @@
 //Declaración de la class Coche
 
-class Coche {
+class Pokemon {
 
-    constructor(nombre, marca, velocidad, peso, frenada, combustible, metros) {
+    constructor(nombre, tipo, velocidad, peso, fuerza, golpeo) {
         this.nombre = nombre;
-        this.marca = marca;
+        this.tipo = tipo;
         this.velocidad = velocidad;
         this.peso = peso;
-        this.frenada = frenada;
-        this.combustible = combustible;
-        this.metros = 0;
+        this.fuerza = fuerza;
+        this.golpeo = golpeo;
 
     }
 
-    acelerar() {
-        return this.velocidad += 30;
+    atacar() {
+        return this.golpeo += 30;
     }
 
-    frenar() {
-        return this.velocidad = 0;
+    esquivar() {
+        return this.golpeo = 0;
     }
 
 };
 
 //Instanciando corredores
 
-let coche1 = new Coche("GT", "Ford", 250, 2000, 50, "Gasolina" );
-let coche2 = new Coche("Celica", "Toyota", 251, 1900, 70, "Gasolina");
-let coche3 = new Coche("TestaRossa", "Ferrari", 270, 2300, 55, "Gasolina");
-let coche4 = new Coche("Camaro", "Chevrolet", 299, 1750, 90, "Diesel");
+let pokemon1 = new Pokemon("Pikachu", "electrico", 200, 120, 80, 50);
+let pokemon2 = new Pokemon("Charmander", "fuego", 150, 150, 100, 80);
+let pokemon3 = new Pokemon("Squirtle", "Agua", 130, 150, 100, 70);
+let pokemon4 = new Pokemon("Bulbasaur", "planta", 100, 170, 90, 60);
 
 //Generando variables básicas de entorno
 
-let allCars = [coche1, coche2, coche3, coche4];
+let allPokemons = [pokemon1, pokemon2, pokemon3, pokemon4];
 
 let team1 = [];
 
