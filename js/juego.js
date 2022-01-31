@@ -7,3 +7,5 @@ const cleanGame = () => {
 }
 
 //Algoritmo
+
+//Se puede hacer con un While que salga del bucle cuando el coche llegue a completar x metros.

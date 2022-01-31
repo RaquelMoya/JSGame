@@ -1,3 +1,5 @@
+//Declaración de la class Coche
+
 class Coche {
 
     constructor(nombre, marca, velocidad, peso, frenada, combustible, metros) {
@@ -20,6 +22,8 @@ class Coche {
     }
 
 };
+
+//Instanciando corredores
 
 let coche1 = new Coche("GT", "Ford", 250, 2000, 50, "Gasolina" );
 let coche2 = new Coche("Celica", "Toyota", 251, 1900, 70, "Gasolina");
