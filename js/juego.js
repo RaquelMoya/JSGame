@@ -6,14 +6,18 @@ let choose1 = (nPokemon) => {
     if(team1 == ""){
         team1 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
+        let datosPokemon = document.getElementById("data" + 1);
         pokemonPrimero.disabled = true;
         pokemonPrimero.classList.add("selected");
+        datosPokemon.innerHTML = `${team1.nombre}`;
         console.log(team1);
     } else if( team2 == ""){
         team2 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
+        let datosPokemon = document.getElementById("data" + 2);
         pokemonPrimero.disabled = true;
         pokemonPrimero.classList.add("selected");
+        datosPokemon.innerHTML = `${team2.nombre}`;
         console.log(team2);
 
         setTimeout(() => {

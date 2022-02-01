@@ -99,3 +99,10 @@ body {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+.pokemonChosen {
+    width: 24em;
+    height: 16em;
+}
+.dataPokemon {
+    font-size: 3em;
+}
