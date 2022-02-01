@@ -1,9 +1,10 @@
-//Declaración de la class Coche
+//Declaración de la class Pokemon
 
 class Pokemon {
 
-    constructor(nombre, tipo, defensa, resistencia, fuerza, golpeo, vida, agilidad, azar ) {
+    constructor(nombre, id, tipo, defensa, resistencia, fuerza, golpeo, vida, agilidad, azar ) {
         this.nombre = nombre;
+        this.id = id;
         this.tipo = tipo;
         this.defensa = defensa;
         this.resistencia = resistencia;
@@ -33,10 +34,11 @@ class Pokemon {
 
 //Instanciando corredores
 
-let pokemon1 = new Pokemon("Pikachu", "electrico", 150, 150, 80, 80, 100, 100);
-let pokemon2 = new Pokemon("Charmander", "fuego", 150, 150, 100, 80, 100, 80);
-let pokemon3 = new Pokemon("Squirtle", "Agua", 130, 150, 100, 70, 100, 70);
-let pokemon4 = new Pokemon("Bulbasaur", "planta", 100, 170, 90, 60, 100, 80);
+let pokemon1 = new Pokemon("Pikachu", "1",  "electrico", 150, 150, 80, 80, 100, 100);
+let pokemon2 = new Pokemon("Charmander", "2", "fuego", 150, 150, 100, 80, 100, 80);
+let pokemon3 = new Pokemon("Squirtle", "3", "Agua", 130, 150, 100, 70, 100, 70);
+let pokemon4 = new Pokemon("Bulbasaur", "4", "planta", 100, 170, 90, 60, 100, 80);
+
 
 //Generando variables básicas de entorno
 
@@ -48,3 +50,10 @@ let team2 = [];
 
 let ganador = "";
 
+/* Posible funcion para elección de personajes
+choose1(idPokemon) {
+
+    this.team1.push(allPokemons[idPokemon]);
+    document.getElementById(idPokemon).className = "carasel";
+            document.getElementById(idPokemon).onclick = "";
+}*/
