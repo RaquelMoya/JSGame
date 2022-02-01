@@ -39,21 +39,20 @@ let pokemon2 = new Pokemon("Charmander", "2", "fuego", 150, 150, 100, 80, 100, 8
 let pokemon3 = new Pokemon("Squirtle", "3", "Agua", 130, 150, 100, 70, 100, 70);
 let pokemon4 = new Pokemon("Bulbasaur", "4", "planta", 100, 170, 90, 60, 100, 80);
 
+//Genero un traductor/diccionario
+
+let allPokemons = {
+    1 : pokemon1,
+    2 : pokemon2,
+    3 : pokemon3,
+    4 : pokemon4
+}
 
 //Generando variables básicas de entorno
 
-let allPokemons = [pokemon1, pokemon2, pokemon3, pokemon4];
+let team1 = "";
 
-let team1 = [];
-
-let team2 = [];
+let team2 = "";
 
 let ganador = "";
 
-/* Posible funcion para elección de personajes
-choose1(idPokemon) {
-
-    this.team1.push(allPokemons[idPokemon]);
-    document.getElementById(idPokemon).className = "carasel";
-            document.getElementById(idPokemon).onclick = "";
-}*/

@@ -1,8 +1,30 @@
 //Funciones
 
+
+let choose1 = (nPokemon) => {
+
+    if(team1 == ""){
+        team1 = allPokemons[nPokemon];
+        let pokemonPrimero = document.getElementById(nPokemon);
+        pokemonPrimero.disabled = true;
+        pokemonPrimero.classList.add("selected");
+        console.log(team1);
+    } else if( team2 == ""){
+        team2 = allPokemons[nPokemon];
+        let pokemonPrimero = document.getElementById(nPokemon);
+        pokemonPrimero.disabled = true;
+        pokemonPrimero.classList.add("selected");
+        console.log(team2);
+
+        setTimeout(() => {
+            cambiaPantalla(3);
+        }, 2500);
+    }
+}
+
 const cleanGame = () => {
-    team1 = [];
-    team2 = [];
+    team1 = "";
+    team2 = "";
     ganador = "";
 }
 
@@ -22,6 +44,7 @@ const cambiaPantalla = (cambio) => {
     }
 
 }
+
 
 //Algoritmo
 
