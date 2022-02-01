@@ -53,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40em;
+    height: 50em;
     width: 80em;
     flex-direction: column;
 }
@@ -90,18 +90,23 @@ body {
 }
 .p1mensaje {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    height: 20em;
+    flex-direction: column;
+    height: 6em;
     width: 80em;
 }
+
 .selected {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 .pokemonChosen {
-    width: 24em;
+    width: 60em;
     height: 16em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .dataPokemon {
     font-size: 3em;
