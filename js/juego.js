@@ -7,7 +7,7 @@ let choose1 = (nPokemon) => {
         team1 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 1);
-        pokemonPrimero.disabled = true;
+        pokemonPrimero.onclick = "";
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team1.nombre}`;
         console.log(team1);
@@ -15,7 +15,7 @@ let choose1 = (nPokemon) => {
         team2 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 2);
-        pokemonPrimero.disabled = true;
+        pokemonPrimero.onclick = "";
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team2.nombre}`;
         console.log(team2);
