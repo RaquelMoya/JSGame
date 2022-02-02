@@ -10,7 +10,7 @@ let choose1 = (nPokemon) => {
         pokemonPrimero.onclick = "";//Bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team1.nombre}`;
-        console.log(team1);
+        console.log(team1.nombre);
     } else if( team2 == ""){
         team2 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
@@ -18,7 +18,7 @@ let choose1 = (nPokemon) => {
         pokemonPrimero.onclick = "";//bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team2.nombre}`;
-        console.log(team2);
+        console.log(team2.nombre);
 
         setTimeout(() => {
             cambiaPantalla(3);
@@ -52,11 +52,11 @@ const cambiaPantalla = (cambio) => {
 const funciones = {
     
     minMax: (n, min, max) => {
-        //min and max limiter..
+        //limite min-max
         return Math.max (Math.min (n, max), min);
     },
     random(min, max){
-        //random creation of a number..
+        //genero número random
         return Math.floor(Math.random() * (max - min) + min);
     }
     
@@ -65,7 +65,9 @@ const funciones = {
 
 //Algoritmo
 
-//Se puede hacer con un While que salga del bucle cuando el coche llegue a completar x metros.
+    //let divFighter1 = document.getElementById("imgFighter1");
+    
 
+    img1 = document.getElementById("imgFighter1");
 
-
+        img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;

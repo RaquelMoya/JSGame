@@ -34,10 +34,10 @@ class Pokemon {
 
 //Instanciando corredores
 
-let pokemon1 = new Pokemon("Pikachu", "1",  "electrico", 150, 150, 80, 80, 100, 100);
-let pokemon2 = new Pokemon("Charmander", "2", "fuego", 150, 150, 100, 80, 100, 80);
-let pokemon3 = new Pokemon("Squirtle", "3", "Agua", 130, 150, 100, 70, 100, 70);
-let pokemon4 = new Pokemon("Bulbasaur", "4", "planta", 100, 170, 90, 60, 100, 80);
+let pokemon1 = new Pokemon("pikachu", "1",  "electrico", 150, 150, 80, 80, 100, 100);
+let pokemon2 = new Pokemon("charmander", "2", "fuego", 150, 150, 100, 80, 100, 80);
+let pokemon3 = new Pokemon("squirtle", "3", "Agua", 130, 150, 100, 70, 100, 70);
+let pokemon4 = new Pokemon("bulbasaur", "4", "planta", 100, 170, 90, 60, 100, 80);
 
 //Genero un traductor/diccionario
 
