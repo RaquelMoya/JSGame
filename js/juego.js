@@ -7,7 +7,7 @@ let choose1 = (nPokemon) => {
         team1 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 1);
-        pokemonPrimero.onclick = "";
+        pokemonPrimero.onclick = "";//Bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team1.nombre}`;
         console.log(team1);
@@ -15,7 +15,7 @@ let choose1 = (nPokemon) => {
         team2 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 2);
-        pokemonPrimero.onclick = "";
+        pokemonPrimero.onclick = "";//bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team2.nombre}`;
         console.log(team2);
@@ -48,13 +48,6 @@ const cambiaPantalla = (cambio) => {
     }
 
 }
-
-
-//Algoritmo
-
-//Se puede hacer con un While que salga del bucle cuando el coche llegue a completar x metros.
-
-
 //Funcion para random
 const funciones = {
     
@@ -68,3 +61,11 @@ const funciones = {
     }
     
 }
+
+
+//Algoritmo
+
+//Se puede hacer con un While que salga del bucle cuando el coche llegue a completar x metros.
+
+
+

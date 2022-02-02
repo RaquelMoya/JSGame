@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!--Screen1. Logo intro del juego-->
     <section id="screen1" class="screens">
         <div class="designScreen1">
             <div class="inicio"><img src="img/portada.jpg" onclick="cambiaPantalla(2)"></div>
 
         </div>
     </section>
+    <!--Screen 2. Selección personaje-->
     <section id="screen2" class="screens" style="display:none">
         <div class="designScreen2">
             <div class="centrar">
@@ -52,9 +54,15 @@
             </div>
         </div>
     </section>
-    
+    <!--Screen3. Pelea-->
     <section id="screen3" class="screens" style="display:none" onclick="cambiaPantalla(4)">
-        <div class="designScreen3"></div>
+        <div class="designScreen3" id= "pokes">
+            <div class="centrar">
+                <div class="izquierda"></div>
+                <div class="centro"></div>
+                <div class="derecha"></div>
+            </div>
+        </div>
     </section>
     <section id="screen4" class="screens" style="display:none" onclick="cambiaPantalla(1)">
         <div class="designScreen4"></div>

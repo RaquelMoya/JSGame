@@ -32,9 +32,8 @@ body {
 }
 .designScreen3 {
     background-color: violet;
-
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 .designScreen4 {
     background-color: blueviolet;
@@ -111,3 +110,35 @@ body {
 .dataPokemon {
     font-size: 3em;
 }
+.izquierda {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: burlywood;
+
+    height: 45em;
+    width: 30em;
+}
+.centro {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 45em;
+    width: 60em;
+}
+.derecha {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: burlywood;
+
+    height: 45em;
+    width: 30em;
+}
+
