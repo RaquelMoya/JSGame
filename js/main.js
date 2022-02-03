@@ -17,17 +17,28 @@ class Pokemon {
     }
 
     atacar(enemigo){
+        /*Posible funcion 1
+        let luck = funciones.random(1, enemigo.azar); //suerte defensa
+        let handic = funciones.random(1, 5); //handicap ataque
+        let hit = (this.fuerza - handic) - (enemigo.defensa + luck);
+        let speed = funciones.random(1, 100); //handicap de velocidad
 
+        if (speed < enemigo.agilidad) {
+            hit -= funciones.random(1, 5);
+        }
+        enemigo.vida -= hit;*/
+        
+        //Posible funcion 2
         /*Declaro la variable suerte que será el resultado de la función random que está en juego.js */
 
-        let suerte = funciones.random(1, enemigo.azar);
+        //let suerte = funciones.random(1, enemigo.azar);
 
         /*Ahora declaramos la variable hit con el resultado de restarle a la defensa del enemigo el valor del golpeo, y luego lo multiplicamos por la variable suerte para saber cuánto daño hace el golpe*/
 
-        let hit = (this.golpeo - enemigo.defensa) * suerte;
+      //  let hit = (this.golpeo - enemigo.defensa) * suerte;
 
          /*finalmente , restamos a la vida del enemigo el valor establecido en el golpe (hit)*/
-         enemigo.vida -= hit;
+         //enemigo.vida -= hit;
 
     }
     

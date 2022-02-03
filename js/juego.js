@@ -10,7 +10,7 @@ let choose1 = (nPokemon) => {
         pokemonPrimero.onclick = "";//Bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team1.nombre}`;
-        console.log(team1.nombre);
+        
     } else if( team2 == ""){
         team2 = allPokemons[nPokemon];
         let pokemonPrimero = document.getElementById(nPokemon);
@@ -18,7 +18,7 @@ let choose1 = (nPokemon) => {
         pokemonPrimero.onclick = "";//bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team2.nombre}`;
-        console.log(team2.nombre);
+        
 
         setTimeout(() => {
             cambiaPantalla(3);
@@ -34,6 +34,7 @@ const cleanGame = () => {
 
     cambiaPantalla(1);
 }
+
 
 const cambiaPantalla = (cambio) => {
 
@@ -72,6 +73,8 @@ let img2 = document.getElementById("imgFighter2");
 
 let statsTeam1 = document.getElementById("stats1");
 let statsTeam2 = document.getElementById("stats2");
+
+let winner = document.getElementById("winner");
    
 const displayGame= () => {
         img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;
@@ -82,22 +85,30 @@ const displayGame= () => {
     }
 
 const pelea= () => {
-    team1.atacar();
-    team2.atacar();
-
+    
     if(team1.vida <= 0) {
         ganador = team1;
 
-        cambiaPantalla(4);
+        console.log("ganador team1");
 
-        let winner = document.getElementById("winner");
+        cambiaPantalla(4);
+        
         winner.innerHTML = `${team1.nombre}`;
-    }else {
+    } 
+    if(team2.vida <= 0) {
         ganador = team2;
 
+        console.log("ganador team2");
         cambiaPantalla(4);
 
         winner.innerHTML = `${team2.nombre}`;
     }
+    
+    team1.atacar();
+    team2.atacar();
+    
+
+    statsTeam1.innerHTML = `<div class="life">Vida: <br>${team1.vida}</dic>`;
+    statsTeam2.innerHTML = `<div class="life">Vida: <br>${team2.vida}</dic>`;
 }
     
