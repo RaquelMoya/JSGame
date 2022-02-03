@@ -55,26 +55,28 @@
         </div>
     </section>
     <!--Screen3. Pelea-->
-    <section id="screen3" class="screens" style="display:none" onclick="cambiaPantalla(4)">
+    <section id="screen3" class="screens" style="display:none">
         <div class="designScreen3" id= "pokes">
             <div class="centrar">
-                <div class="izquierda" id="imgFighter1">
-                    <div class="fighter1"></div>
-                    <div class="vida1"></div>
+                <div class="izquierda" >
+                    <div class="fighter1"id="imgFighter1"></div>
+                    <div id="stats1" class="vida1"></div>
                 </div>
                 <div class="centro">
-                    <div class="boton"></div>
+                    <div class="boton"><img class="fightLogo" src="img/fight.png" alt="fight" onclick="pelea()"></div>
                 </div>
                 <div class="derecha">
-                    <div class="fighter2" id="imgFighter2"></div>
-                    <div class="vida2"></div>
+                    <div class="fighter2"id="imgFighter2"></div>
+                    <div id="stats2" class="vida2"></div>
                 </div>
             </div>
         </div>
     </section>
     <!--Screen4. Winner-->
-    <section id="screen4" class="screens" style="display:none" onclick="cambiaPantalla(1)">
-        <div class="designScreen4"></div>
+    <section id="screen4" class="screens" style="display:none" onclick="cleanGame()">
+        <div class="designScreen4">
+            <div class="ganador" id ="winner"></div>
+        </div>
     </section>
 
 

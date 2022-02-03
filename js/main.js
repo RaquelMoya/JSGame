@@ -28,6 +28,7 @@ class Pokemon {
 
          /*finalmente , restamos a la vida del enemigo el valor establecido en el golpe (hit)*/
          enemigo.vida -= hit;
+
     }
     
 };

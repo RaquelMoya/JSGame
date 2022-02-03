@@ -5,10 +5,6 @@ let choose1 = (nPokemon) => {
 
     if(team1 == ""){
         team1 = allPokemons[nPokemon];
-        let img1 = document.getElementById("imgFighter1");
-  
-          img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;
-
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 1);
         pokemonPrimero.onclick = "";//Bloqueo personaje
@@ -17,10 +13,6 @@ let choose1 = (nPokemon) => {
         console.log(team1.nombre);
     } else if( team2 == ""){
         team2 = allPokemons[nPokemon];
-        let img2 = document.getElementById("imgFighter2");
-  
-          img2.innerHTML = `<img class="fighter2" src="img/${team2.nombre}.png" alt="fighter2" >`;
-
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 2);
         pokemonPrimero.onclick = "";//bloqueo personaje
@@ -30,6 +22,7 @@ let choose1 = (nPokemon) => {
 
         setTimeout(() => {
             cambiaPantalla(3);
+            displayGame();
         }, 2500);
     }
 }
@@ -38,6 +31,8 @@ const cleanGame = () => {
     team1 = "";
     team2 = "";
     ganador = "";
+
+    cambiaPantalla(1);
 }
 
 const cambiaPantalla = (cambio) => {
@@ -71,8 +66,38 @@ const funciones = {
 }
 
 
-//Algoritmo
+//Display Pokemons elegidos en screen3
+let img1 = document.getElementById("imgFighter1");
+let img2 = document.getElementById("imgFighter2");
 
-    //let divFighter1 = document.getElementById("imgFighter1");
-    
+let statsTeam1 = document.getElementById("stats1");
+let statsTeam2 = document.getElementById("stats2");
+   
+const displayGame= () => {
+        img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;
+        img2.innerHTML = `<img class="fighter2" src="img/${team2.nombre}.png" alt="fighter2" >`;
+
+        statsTeam1.innerHTML = `<div class="life">Vida: <br>${team1.vida}</dic>`;
+        statsTeam2.innerHTML = `<div class="life">Vida: <br>${team2.vida}</dic>`;
+    }
+
+const pelea= () => {
+    team1.atacar();
+    team2.atacar();
+
+    if(team1.vida <= 0) {
+        ganador = team1;
+
+        cambiaPantalla(4);
+
+        let winner = document.getElementById("winner");
+        winner.innerHTML = `${team1.nombre}`;
+    }else {
+        ganador = team2;
+
+        cambiaPantalla(4);
+
+        winner.innerHTML = `${team2.nombre}`;
+    }
+}
     

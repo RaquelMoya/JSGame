@@ -113,10 +113,8 @@ body {
 .izquierda {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-
-    
 
     background-color: burlywood;
 
@@ -134,7 +132,7 @@ body {
 .derecha {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 
     background-color: burlywood;
@@ -149,4 +147,25 @@ body {
 .fighter2 {
     height: 15em;
     width: 10em;
+}
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 10em;
+    width: 10em;
+
+    background-color: blueviolet;
+}
+.fightLogo {
+    height: 10em;
+    width: 20em;
+}
+.life {
+    height: 5em;
+    width: 5em;
+
+    color: black;
+    
 }
