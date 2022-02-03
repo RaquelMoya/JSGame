@@ -5,6 +5,10 @@ let choose1 = (nPokemon) => {
 
     if(team1 == ""){
         team1 = allPokemons[nPokemon];
+        let img1 = document.getElementById("imgFighter1");
+  
+          img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;
+
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 1);
         pokemonPrimero.onclick = "";//Bloqueo personaje
@@ -13,6 +17,10 @@ let choose1 = (nPokemon) => {
         console.log(team1.nombre);
     } else if( team2 == ""){
         team2 = allPokemons[nPokemon];
+        let img2 = document.getElementById("imgFighter2");
+  
+          img2.innerHTML = `<img class="fighter2" src="img/${team2.nombre}.png" alt="fighter2" >`;
+
         let pokemonPrimero = document.getElementById(nPokemon);
         let datosPokemon = document.getElementById("data" + 2);
         pokemonPrimero.onclick = "";//bloqueo personaje
@@ -67,7 +75,4 @@ const funciones = {
 
     //let divFighter1 = document.getElementById("imgFighter1");
     
-
-    img1 = document.getElementById("imgFighter1");
-
-        img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;
+    

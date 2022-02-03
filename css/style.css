@@ -116,6 +116,8 @@ body {
     justify-content: center;
     flex-direction: column;
 
+    
+
     background-color: burlywood;
 
     height: 45em;
@@ -140,4 +142,11 @@ body {
     height: 45em;
     width: 30em;
 }
-
+.fighter1 {
+    height: 15em;
+    width: 10em;
+}
+.fighter2 {
+    height: 15em;
+    width: 10em;
+}
