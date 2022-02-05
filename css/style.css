@@ -6,6 +6,7 @@ body {
     width: 100vw;
 
 }
+/*Screens*/
 .screens {
     width: 100vw;
     height: 100vh;
@@ -41,14 +42,15 @@ body {
     height: 100vh;
     width: 100vw;
 }
-.centrar {
+/*Screen2*/
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
 }
-.personajes {
+.characters {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +58,7 @@ body {
     width: 80em;
     flex-direction: column;
 }
-.imagenes {
+.images {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,14 +66,14 @@ body {
     height: 30em;
     width: 80em;
 }
-.superior {
+.up {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 5em;
     width: 80em;
 }
-.contenido {
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +81,7 @@ body {
     height: 20em;
     width: 80em;
 }
-.cara {
+.face {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +89,7 @@ body {
     height: 20em;
     width: 12em;
 }
-.p1mensaje {
+.msg1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,7 +102,7 @@ body {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-.pokemonChosen {
+.chosen {
     width: 60em;
     height: 16em;
     display: flex;
@@ -110,7 +112,8 @@ body {
 .dataPokemon {
     font-size: 3em;
 }
-.izquierda {
+/*Screen3*/
+.left {
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -121,7 +124,7 @@ body {
     height: 45em;
     width: 30em;
 }
-.centro {
+.mid {
     display:flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +132,7 @@ body {
     height: 45em;
     width: 60em;
 }
-.derecha {
+.right {
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -148,7 +151,7 @@ body {
     height: 15em;
     width: 10em;
 }
-.boton {
+.button {
     display: flex;
     align-items: center;
     justify-content: center;

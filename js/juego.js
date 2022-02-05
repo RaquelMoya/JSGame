@@ -82,8 +82,9 @@ const displayGame= () => {
 
         statsTeam1.innerHTML = `<div class="life">Vida: <br>${team1.vida}</dic>`;
         statsTeam2.innerHTML = `<div class="life">Vida: <br>${team2.vida}</dic>`;
-    }
+}
 
+//Funcion pelea
 const pelea= () => {
     
     if(team1.vida <= 0) {

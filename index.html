@@ -12,41 +12,41 @@
     <!--Screen1. Logo intro del juego-->
     <section id="screen1" class="screens">
         <div class="designScreen1">
-            <div class="inicio"><img src="img/portada.jpg" onclick="cambiaPantalla(2)"></div>
-
+            <div class="init"><img src="img/portada.jpg" onclick="cambiaPantalla(2)"></div>
         </div>
     </section>
+
     <!--Screen 2. Selección personaje-->
     <section id="screen2" class="screens" style="display:none">
         <div class="designScreen2">
-            <div class="centrar">
-                <div class="personajes">
-                    <div class="imagenes">
-                        <div class="superior"></div>
-                        <div class="contenido">
-                            <div class="cara"></div>
-                            <div class="cara"><img src="img/pika.png" height="150em" width="120em" id="1" class="chosen" onclick="choose1(1)">
+            <div class="center">
+                <div class="characters">
+                    <div class="images">
+                        <div class="up"></div>
+                        <div class="content">
+                            <div class="face"></div>
+                            <div class="face"><img src="img/pika.png" height="150em" width="120em" id="1" class="chosen" onclick="choose1(1)">
                                 <div class="nom">PIKACHU</div>
                             </div>
-                            <div class="cara"><img src="img/charmr.png" height="150em" width="120em" id="2" class="chosen" onclick="choose1(2)">
+                            <div class="face"><img src="img/charmr.png" height="150em" width="120em" id="2" class="chosen" onclick="choose1(2)">
                                 <div class="nom">CHARMANDER</div>
                             </div>
-                            <div class="cara"><img src="img/squirtle.png" height="150em" width="120em" id="3" class="chosen" onclick="choose1(3)">
+                            <div class="face"><img src="img/squirtle.png" height="150em" width="120em" id="3" class="chosen" onclick="choose1(3)">
                                 <div class="nom">SQUIRTLE</div>
                             </div>
-                            <div class="cara"><img src="img/bulbasr.png" height="150em" width="120em" id="4" class="chosen" onclick="choose1(4)">
+                            <div class="face"><img src="img/bulbasr.png" height="150em" width="120em" id="4" class="chosen" onclick="choose1(4)">
                                 <div class="nom">BULBASAUR</div>
                             </div>
-                            <div class="cara"></div>
+                            <div class="face"></div>
                         </div>
                     </div>
-                    <div class="p1mensaje">
+                    <div class="msg1">
                         Player 1 and Player 2                  
                     </div>
-                    <div class="p2mensaje">
+                    <div class="msg2">
                         - SELECT YOUR POKEMON - 
                     </div>
-                    <div class="pokemonChosen">
+                    <div class="chosen">
                         <div id="data1"class="dataPoke"></div>
                         <div id="data2"class="dataPoke"></div>
                     </div>
@@ -54,24 +54,26 @@
             </div>
         </div>
     </section>
+
     <!--Screen3. Pelea-->
     <section id="screen3" class="screens" style="display:none">
         <div class="designScreen3" id= "pokes">
-            <div class="centrar">
-                <div class="izquierda" >
+            <div class="center">
+                <div class="left" >
                     <div class="fighter1"id="imgFighter1"></div>
                     <div id="stats1" class="vida1"></div>
                 </div>
-                <div class="centro">
-                    <div class="boton"><img class="fightLogo" src="img/fight.png" alt="fight" onclick="pelea()"></div>
+                <div class="mid">
+                    <div class="button"><img class="fightLogo" src="img/fight.png" alt="fight" onclick="pelea()"></div>
                 </div>
-                <div class="derecha">
+                <div class="right">
                     <div class="fighter2"id="imgFighter2"></div>
                     <div id="stats2" class="vida2"></div>
                 </div>
             </div>
         </div>
     </section>
+    
     <!--Screen4. Winner-->
     <section id="screen4" class="screens" style="display:none" onclick="cleanGame()">
         <div class="designScreen4">
