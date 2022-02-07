@@ -75,26 +75,28 @@ const displayGame= () => {
 //Funcion pelea
 const pelea= () => {
     
+    team1.atacar();
+    team2.atacar();
+
     if(team1.vida <= 0) {
-        ganador = team1;
+        ganador = team2;
 
         console.log("ganador team1");
 
         cambiaPantalla(4);
         
-        winner.innerHTML = `${team1.nombre}`;
+        winner.innerHTML = `The winner is Team 1 with ${team1.nombre}`;
     } 
     if(team2.vida <= 0) {
-        ganador = team2;
+        ganador = team1;
 
         console.log("ganador team2");
         cambiaPantalla(4);
 
-        winner.innerHTML = `${team2.nombre}`;
+        winner.innerHTML = `The winner is Team 2 with ${team2.nombre}`;
     }
     
-    team1.atacar();
-    team2.atacar();
+   
     
 
     statsTeam1.innerHTML = `<div class="life">Vida: <br>${team1.vida}</dic>`;

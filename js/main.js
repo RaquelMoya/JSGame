@@ -28,17 +28,13 @@ class Pokemon {
         this.golpeo = golpeo;
         this.vida = 100;
         this.agilidad = agilidad;
-        this.azar = 1;
+        this.azar = funciones.random(1,20);
     }
 
-    atacar() {
-        this.azar = funciones.random*azar;
-        
-         if(team1.azar > team2.azar) {
-            team1.atacar(team2.vida);
-        } else {
-            team2.atacar(team1.vida);
-        }
+    atacar(enemy) {
+       
+        console.log(this.azar);
+        this.vida -= this.azar;
     
     }
 };

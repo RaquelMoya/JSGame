@@ -37,6 +37,11 @@ body {
     height: 100vh;
 }
 .designScreen4 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: blueviolet;
 
     height: 100vh;
@@ -171,4 +176,16 @@ body {
 
     color: black;
     
+}
+/*Screen4*/
+
+#winner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30em;
+    width: 50em;
+
+    background-color: aquamarine;
 }
