@@ -26,13 +26,17 @@ body {
     width: 100vw;
 }
 .designScreen2 {
-    background-image: linear-gradient(to bottom, gray, turquoise);
+    background-image:url(../img/battle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     height: 100vh;
     width: 100vw;
 }
 .designScreen3 {
-    background-image: linear-gradient(to bottom, gray, turquoise);
+    background-image: url(../img/stadium.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     width: 100vw;
     height: 100vh;
@@ -43,7 +47,10 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: blueviolet;
+    background-image:url(../img/wall.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(41, 40, 40);
 
     height: 100vh;
     width: 100vw;
@@ -60,8 +67,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50em;
-    width: 80em;
+    height: 45em;
+    width: 100vw;
     flex-direction: column;
 }
 .images {
@@ -70,14 +77,14 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 30em;
-    width: 80em;
+    width: 100vw;
 }
 .up {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 5em;
-    width: 80em;
+    width: 100vw;
 }
 .content {
     display: flex;
@@ -85,7 +92,7 @@ body {
     justify-content: center;
     flex-direction: row;
     height: 20em;
-    width: 80em;
+    width: 100vw;
 }
 .face {
     display: flex;
@@ -100,8 +107,24 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
     height: 6em;
-    width: 80em;
+    width: 100vw;
+}
+.msg2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    height: 6em;
+    width: 100vw; 
 }
 
 .selected {
@@ -111,12 +134,17 @@ body {
 .pokeChosen {
     width: 60em;
     height: 16em;
+    font-size:larger;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .dataPokemon {
-    font-size: 3em;
+    font-size:3em;
+
 }
 /*Screen3*/
 .left {
@@ -125,9 +153,7 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    background-image: linear-gradient(to bottom, gray, turquoise);
-
-    height: 45em;
+    height: 100vh;
     width: 30em;
 }
 .mid {
@@ -135,7 +161,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    height: 45em;
+    height: 100vh;
     width: 60em;
 }
 .right {
@@ -144,9 +170,7 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    background-image: linear-gradient(to bottom, gray, turquoise);
-
-    height: 45em;
+    height: 100vh;
     width: 30em;
 }
 .fighter1 {
@@ -162,7 +186,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    height: 80em;
+    height: 40em;
     width: 40em;
 
 }
@@ -174,7 +198,10 @@ body {
     height: 5em;
     width: 5em;
 
-    color: black;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 /*Screen4*/
@@ -183,9 +210,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
+    height: 20em;
+    width: 30em;
+    color: white;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.winner {
     height: 30em;
-    width: 50em;
-
-    background-color: aquamarine;
+    width: 40em;
 }
