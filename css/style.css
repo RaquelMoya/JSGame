@@ -102,7 +102,7 @@ body {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-.chosen {
+.pokeChosen {
     width: 60em;
     height: 16em;
     display: flex;

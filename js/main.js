@@ -1,3 +1,19 @@
+//Funcion para random
+const funciones = {
+    
+    minMax: (n, min, max) => {
+        //limite min-max
+        return Math.max (Math.min (n, max), min);
+    },
+    random(min, max){
+        //genero número random
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    
+}
+
+
 //Declaración de la class Pokemon
 
 class Pokemon {
@@ -12,44 +28,27 @@ class Pokemon {
         this.golpeo = golpeo;
         this.vida = 100;
         this.agilidad = agilidad;
-        this.azar = azar;
-
+        this.azar = 1;
     }
 
-    atacar(enemigo){
-        /*Posible funcion 1
-        let luck = funciones.random(1, enemigo.azar); //suerte defensa
-        let handic = funciones.random(1, 5); //handicap ataque
-        let hit = (this.fuerza - handic) - (enemigo.defensa + luck);
-        let speed = funciones.random(1, 100); //handicap de velocidad
-
-        if (speed < enemigo.agilidad) {
-            hit -= funciones.random(1, 5);
-        }
-        enemigo.vida -= hit;*/
+    atacar() {
+        this.azar = funciones.random*azar;
         
-        //Posible funcion 2
-        /*Declaro la variable suerte que será el resultado de la función random que está en juego.js */
-
-        //let suerte = funciones.random(1, enemigo.azar);
-
-        /*Ahora declaramos la variable hit con el resultado de restarle a la defensa del enemigo el valor del golpeo, y luego lo multiplicamos por la variable suerte para saber cuánto daño hace el golpe*/
-
-      //  let hit = (this.golpeo - enemigo.defensa) * suerte;
-
-         /*finalmente , restamos a la vida del enemigo el valor establecido en el golpe (hit)*/
-         //enemigo.vida -= hit;
-
-    }
+         if(team1.azar > team2.azar) {
+            team1.atacar(team2.vida);
+        } else {
+            team2.atacar(team1.vida);
+        }
     
+    }
 };
 
 //Instanciando corredores
 
-let pokemon1 = new Pokemon("pikachu", "1",  "electrico", 150, 150, 80, 80, 100, 100);
-let pokemon2 = new Pokemon("charmander", "2", "fuego", 150, 150, 100, 80, 100, 80);
-let pokemon3 = new Pokemon("squirtle", "3", "Agua", 130, 150, 100, 70, 100, 70);
-let pokemon4 = new Pokemon("bulbasaur", "4", "planta", 100, 170, 90, 60, 100, 80);
+let pokemon1 = new Pokemon("pikachu", "1",  "electrico", 150, 150, 80, 80, 100, 100, 1);
+let pokemon2 = new Pokemon("charmander", "2", "fuego", 150, 150, 100, 80, 100, 80, 1);
+let pokemon3 = new Pokemon("squirtle", "3", "Agua", 130, 150, 100, 70, 100, 70, 1);
+let pokemon4 = new Pokemon("bulbasaur", "4", "planta", 100, 170, 90, 60, 100, 80, 1);
 
 //Genero un traductor/diccionario
 

@@ -10,6 +10,7 @@ let choose1 = (nPokemon) => {
         pokemonPrimero.onclick = "";//Bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team1.nombre}`;
+        console.log("selected team1");
         
     } else if( team2 == ""){
         team2 = allPokemons[nPokemon];
@@ -18,6 +19,7 @@ let choose1 = (nPokemon) => {
         pokemonPrimero.onclick = "";//bloqueo personaje
         pokemonPrimero.classList.add("selected");
         datosPokemon.innerHTML = `${team2.nombre}`;
+        console.log("selected team2");
         
 
         setTimeout(() => {
@@ -52,20 +54,6 @@ const cambiaPantalla = (cambio) => {
     }
 
 }
-//Funcion para random
-const funciones = {
-    
-    minMax: (n, min, max) => {
-        //limite min-max
-        return Math.max (Math.min (n, max), min);
-    },
-    random(min, max){
-        //genero número random
-        return Math.floor(Math.random() * (max - min) + min);
-    }
-    
-}
-
 
 //Display Pokemons elegidos en screen3
 let img1 = document.getElementById("imgFighter1");
