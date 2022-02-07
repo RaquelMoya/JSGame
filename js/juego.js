@@ -30,10 +30,9 @@ let choose1 = (nPokemon) => {
 }
 
 const cleanGame = () => {
-    team1 = "";
-    team2 = "";
-    ganador = "";
-
+    
+        window.location.reload();
+      
     cambiaPantalla(1);
 }
 
