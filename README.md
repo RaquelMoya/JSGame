@@ -20,7 +20,7 @@ En la screen 1 vemos el logo del nombre del juego, y para pasar a la screen 2 de
 
 En la screen 2 tenemos la selección de personajes. Debemos clickar primero sobre el seleccionado para el player 1, y después clickar sobre otro distinto para seleccionar el de player 2. 
 
-<img src= "img/screen2.choose.png" width= "500em">
+<img src= "img/screen2choose.png" width= "500em">
 
 Como podemos ver, los personajes seleccionados aparecen deshabilitados para que ambos players no puedan seleccionar el mismo. En la parte inferior aparecen los nombres de los seleccionados (a la izquierda, player 1; a la derecha, player 2). Una vez completada la selección, cambia automáticamente de pantalla a screen 3.
 

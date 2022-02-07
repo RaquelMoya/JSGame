@@ -84,7 +84,7 @@ const pelea= () => {
 
         cambiaPantalla(4);
         
-        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 1 with ${team1.nombre}`;
+        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 2 with ${team2.nombre}`;
     } 
     if(team2.vida <= 0) {
         ganador = team1;
@@ -92,7 +92,7 @@ const pelea= () => {
         console.log("ganador team2");
         cambiaPantalla(4);
 
-        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 2 with ${team2.nombre}`;
+        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 1 with ${team1.nombre}`;
     }
     
    
