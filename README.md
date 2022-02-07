@@ -1,5 +1,5 @@
 ## POKEMON BATTLE FRONTIER
-![Hola](/img/Hello.gif)
+![Hola](img/helloworld.gif)
 
 :wave: Soy Raquel Moya.</br>
 :computer: Soy una estudiante de FSD en <kbd>⇥</kbd> <img src="/img/GHA.png" width="130em" /></br>
@@ -51,7 +51,7 @@ Para la realización de este proyecto, se han usado las siguientes tecnologías:
 
 
 
-Puedes ver este proyecto en: <kbd>⇥</kbd> [GitHub pages](https://raquelmoya.github.io/proyectoNintendoCSS/ "GitHub pages")
+Puedes ver este proyecto en: <kbd>⇥</kbd> [GitHub pages](https://raquelmoya.github.io/JSGame)
 
 <hr>
 
