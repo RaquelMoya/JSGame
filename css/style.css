@@ -32,7 +32,8 @@ body {
     width: 100vw;
 }
 .designScreen3 {
-    background-color: violet;
+    background-image: linear-gradient(to bottom, gray, turquoise);
+
     width: 100vw;
     height: 100vh;
 }
@@ -121,10 +122,10 @@ body {
 .left {
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
 
-    background-color: burlywood;
+    background-image: linear-gradient(to bottom, gray, turquoise);
 
     height: 45em;
     width: 30em;
@@ -140,10 +141,10 @@ body {
 .right {
     display:flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
 
-    background-color: burlywood;
+    background-image: linear-gradient(to bottom, gray, turquoise);
 
     height: 45em;
     width: 30em;
@@ -161,13 +162,12 @@ body {
     align-items: center;
     justify-content: center;
 
-    height: 10em;
-    width: 10em;
+    height: 80em;
+    width: 40em;
 
-    background-color: blueviolet;
 }
 .fightLogo {
-    height: 10em;
+    height: 20em;
     width: 20em;
 }
 .life {
