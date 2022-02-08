@@ -1,5 +1,6 @@
 //Funciones
 
+//Selección de personajes
 
 let choose1 = (nPokemon) => {
 
@@ -29,6 +30,8 @@ let choose1 = (nPokemon) => {
     }
 }
 
+//Limpieza del juego antes de inicio
+
 const cleanGame = () => {
 
         window.location.reload();
@@ -36,6 +39,7 @@ const cleanGame = () => {
     cambiaPantalla(1);
 }
 
+//Cambio de pantalla 
 
 const cambiaPantalla = (cambio) => {
 

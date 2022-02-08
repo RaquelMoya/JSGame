@@ -1,15 +1,10 @@
 //Funcion para random
 const funciones = {
     
-    minMax: (n, min, max) => {
-        //limite min-max
-        return Math.max (Math.min (n, max), min);
-    },
     random(min, max){
         //genero número random
         return Math.floor(Math.random() * (max - min) + min);
     }
-
     
 }
 
@@ -31,7 +26,7 @@ class Pokemon {
         this.azar = funciones.random(1,20);
     }
 
-    atacar(enemy) {
+    atacar() {
        
         console.log(this.azar);
         this.vida -= this.azar;
