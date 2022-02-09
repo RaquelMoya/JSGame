@@ -71,16 +71,19 @@ const displayGame= () => {
         img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;
         img2.innerHTML = `<img class="fighter2" src="img/${team2.nombre}.png" alt="fighter2" >`;
 
-        statsTeam1.innerHTML = `<div class="life">Vida: <br>${team1.vida}</dic>`;
-        statsTeam2.innerHTML = `<div class="life">Vida: <br>${team2.vida}</dic>`;
+        
+
+        statsTeam1.innerHTML = `<div class="lifeBar"><div id="lifeBar1"></div>`;
+        statsTeam2.innerHTML = `<div class="lifeBar"><div id="lifeBar2"></div>`;
 }
 
 //Funcion pelea
+
 const pelea= () => {
-    
+
     team1.atacar();
     team2.atacar();
-
+    
     
 
     if(team1.vida <= 0) {  
@@ -95,11 +98,10 @@ const pelea= () => {
 
         winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 1 with ${team1.nombre}`;
     }
-    
-   
-    
 
-    statsTeam1.innerHTML = `<div class="life">Vida: <br>${team1.vida}</dic>`;
-    statsTeam2.innerHTML = `<div class="life">Vida: <br>${team2.vida}</dic>`;
+    statsTeam1.innerHTML = `<div class="lifeBar"><div id="lifeBar1"></div>`;
+    statsTeam2.innerHTML = `<div class="lifeBar"><div id="lifeBar2"></div>`;
+    document.getElementById("lifeBar1").style.width = `${team1.vida}`+"%";
+    document.getElementById("lifeBar2").style.width = `${team2.vida}`+"%";
 }
     

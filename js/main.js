@@ -30,6 +30,8 @@ class Pokemon {
        
         console.log(this.azar);
         this.vida -= this.azar;
+
+        this.azar=funciones.random(1,20);
     
     }
 };
