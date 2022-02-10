@@ -6,25 +6,23 @@ let choose1 = (nPokemon) => {
 
     if(team1 == ""){
         team1 = allPokemons[nPokemon];
-        let pokemonPrimero = document.getElementById(nPokemon);
-        let datosPokemon = document.getElementById("data" + 1);
-        pokemonPrimero.onclick = "";//Bloqueo personaje
-        pokemonPrimero.classList.add("selected");
-        datosPokemon.innerHTML = `${team1.nombre}`;
-        console.log("selected team1");
+        let pokemonFirst = document.getElementById(nPokemon);
+        let dataPokemon = document.getElementById("data" + 1);
+        pokemonFirst.onclick = "";//Bloqueo personaje
+        pokemonFirst.classList.add("selected");
+        dataPokemon.innerHTML = `${team1.name}`;
+        
         
     } else if( team2 == ""){
         team2 = allPokemons[nPokemon];
-        let pokemonPrimero = document.getElementById(nPokemon);
-        let datosPokemon = document.getElementById("data" + 2);
-        pokemonPrimero.onclick = "";//bloqueo personaje
-        pokemonPrimero.classList.add("selected");
-        datosPokemon.innerHTML = `${team2.nombre}`;
-        console.log("selected team2");
-        
+        let pokemonFirst = document.getElementById(nPokemon);
+        let dataPokemon = document.getElementById("data" + 2);
+        pokemonFirst.onclick = "";//bloqueo personaje
+        pokemonFirst.classList.add("selected");
+        dataPokemon.innerHTML = `${team2.name}`;        
 
         setTimeout(() => {
-            cambiaPantalla(3);
+            changeScreen(3);
             displayGame();
         }, 2500);
     }
@@ -36,24 +34,24 @@ const cleanGame = () => {
 
         window.location.reload();
       
-    cambiaPantalla(1);
+    changeScreen(1);
 }
 
 //Cambio de pantalla 
 
-const cambiaPantalla = (cambio) => {
+const changeScreen = (change) => {
 
-    let pantallaDeseada = "screen" + cambio;
+    let selectedScreen = "screen" + change;
 
-    let arrayPantallas = ["screen1", "screen2", "screen3", "screen4"];
+    let arrayScreens = ["screen1", "screen2", "screen3", "screen4"];
 
     //Le decimos a filter que si encuentra el valor que le pasamos en el array, no lo incluya
-    arrayPantallas = arrayPantallas.filter(valor => !pantallaDeseada.includes(valor));
+    arrayScreens = arrayScreens.filter(val => !selectedScreen.includes(val));
     //Le ponemos display "block" a la pantalla deseada
-    document.getElementById(pantallaDeseada).style.display = "block";
+    document.getElementById(selectedScreen).style.display = "block";
     //Recorremos el arrayPantallas para poner el display:none
-    for(let pantalla of arrayPantallas) {
-        document.getElementById(pantalla).style.display = "none";
+    for(let screen of arrayScreens) {
+        document.getElementById(screen).style.display = "none";
     }
 
 }
@@ -68,8 +66,8 @@ let statsTeam2 = document.getElementById("stats2");
 let winner = document.getElementById("winner");
    
 const displayGame= () => {
-        img1.innerHTML = `<img class="fighter1" src="img/${team1.nombre}.png" alt="fighter1" >`;
-        img2.innerHTML = `<img class="fighter2" src="img/${team2.nombre}.png" alt="fighter2" >`;
+        img1.innerHTML = `<img class="fighter1" src="img/${team1.name}.png" alt="fighter1" >`;
+        img2.innerHTML = `<img class="fighter2" src="img/${team2.name}.png" alt="fighter2" >`;
 
         
 
@@ -79,29 +77,29 @@ const displayGame= () => {
 
 //Funcion pelea
 
-const pelea= () => {
+const fight= () => {
 
-    team1.atacar();
-    team2.atacar();
+    team1.atack();
+    team2.atack();
     
     
 
-    if(team1.vida <= 0) {  
+    if(team1.life <= 0) {  
 
-        cambiaPantalla(4);
+        changeScreen(4);
         
-        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 2 with ${team2.nombre}`;
+        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 2 with ${team2.name}`;
     } 
-    if(team2.vida <= 0) {
+    if(team2.life <= 0) {
 
-        cambiaPantalla(4);
+        changeScreen(4);
 
-        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 1 with ${team1.nombre}`;
+        winner.innerHTML = `<img class="winner" src="img/winner.png" alt="winner" > </br> The winner is Team 1 with ${team1.name}`;
     }
 
     statsTeam1.innerHTML = `<div class="lifeBar"><div id="lifeBar1"></div>`;
     statsTeam2.innerHTML = `<div class="lifeBar"><div id="lifeBar2"></div>`;
-    document.getElementById("lifeBar1").style.width = `${team1.vida}`+"%";
-    document.getElementById("lifeBar2").style.width = `${team2.vida}`+"%";
+    document.getElementById("lifeBar1").style.width = `${team1.life}`+"%";
+    document.getElementById("lifeBar2").style.width = `${team2.life}`+"%";
 }
     

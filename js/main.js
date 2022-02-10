@@ -1,5 +1,5 @@
 //Funcion para random
-const funciones = {
+const functions = {
     
     random(min, max){
         //genero número random
@@ -13,35 +13,34 @@ const funciones = {
 
 class Pokemon {
 
-    constructor(nombre, id, tipo, defensa, resistencia, fuerza, golpeo, vida, agilidad, azar ) {
-        this.nombre = nombre;
+    constructor(name, id, type, defense, resistance, strong, hit, life, agility, luck ) {
+        this.name = name;
         this.id = id;
-        this.tipo = tipo;
-        this.defensa = defensa;
-        this.resistencia = resistencia;
-        this.fuerza = fuerza;
-        this.golpeo = golpeo;
-        this.vida = 100;
-        this.agilidad = agilidad;
-        this.azar = funciones.random(1,20);
+        this.type = type;
+        this.defense = defense;
+        this.resistance = resistance;
+        this.strong = strong;
+        this.hit = hit;
+        this.life = 100;
+        this.agility = agility;
+        this.luck = functions.random(1,20);
     }
 
-    atacar() {
+    atack() {
        
-        console.log(this.azar);
-        this.vida -= this.azar;
+        this.life -= this.luck;
 
-        this.azar=funciones.random(1,20);
+        this.luck=functions.random(1,20);
     
     }
 };
 
 //Instanciando corredores
 
-let pokemon1 = new Pokemon("pikachu", "1",  "electrico", 150, 150, 80, 80, 100, 100, 1);
-let pokemon2 = new Pokemon("charmander", "2", "fuego", 150, 150, 100, 80, 100, 80, 1);
-let pokemon3 = new Pokemon("squirtle", "3", "Agua", 130, 150, 100, 70, 100, 70, 1);
-let pokemon4 = new Pokemon("bulbasaur", "4", "planta", 100, 170, 90, 60, 100, 80, 1);
+let pokemon1 = new Pokemon("pikachu", "1",  "electric", 150, 150, 80, 80, 100, 100, 1);
+let pokemon2 = new Pokemon("charmander", "2", "fire", 150, 150, 100, 80, 100, 80, 1);
+let pokemon3 = new Pokemon("squirtle", "3", "water", 130, 150, 100, 70, 100, 70, 1);
+let pokemon4 = new Pokemon("bulbasaur", "4", "plant", 100, 170, 90, 60, 100, 80, 1);
 
 //Genero un traductor/diccionario
 

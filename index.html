@@ -12,7 +12,7 @@
     <!--Screen1. Logo intro del juego-->
     <section id="screen1" class="screens">
         <div class="designScreen1">
-            <div class="init"><img src="img/portada.jpg" onclick="cambiaPantalla(2)"></div>
+            <div class="init"><img src="img/portada.jpg" onclick="changeScreen(2)"></div>
         </div>
     </section>
 
@@ -26,16 +26,16 @@
                         <div class="content">
                             <div class="face"></div>
                             <div class="face"><img src="img/pika.png" height="150em" width="120em" id="1" class="chosen" onclick="choose1(1)">
-                                <div class="nom">PIKACHU</div>
+                                <div class="name">PIKACHU</div>
                             </div>
                             <div class="face"><img src="img/charmr.png" height="150em" width="120em" id="2" class="chosen" onclick="choose1(2)">
-                                <div class="nom">CHARMANDER</div>
+                                <div class="name">CHARMANDER</div>
                             </div>
                             <div class="face"><img src="img/squirtle.png" height="150em" width="120em" id="3" class="chosen" onclick="choose1(3)">
-                                <div class="nom">SQUIRTLE</div>
+                                <div class="name">SQUIRTLE</div>
                             </div>
                             <div class="face"><img src="img/bulbasr.png" height="150em" width="120em" id="4" class="chosen" onclick="choose1(4)">
-                                <div class="nom">BULBASAUR</div>
+                                <div class="name">BULBASAUR</div>
                             </div>
                             <div class="face"></div>
                         </div>
@@ -55,20 +55,20 @@
         </div>
     </section>
 
-    <!--Screen3. Pelea-->
+    <!--Screen3. Fight-->
     <section id="screen3" class="screens" style="display:none">
         <div class="designScreen3" id= "pokes">
             <div class="center">
                 <div class="left" >
                     <div class="fighter1"id="imgFighter1"></div>
-                    <div id="stats1" class="vida1"></div>
+                    <div id="stats1" class="life1"></div>
                 </div>
                 <div class="mid">
-                    <div class="button"><img class="fightLogo" src="img/fight.png" alt="fight" onclick="pelea()"></div>
+                    <div class="button"><img class="fightLogo" src="img/fight.png" alt="fight" onclick="fight()"></div>
                 </div>
                 <div class="right">
                     <div class="fighter2"id="imgFighter2"></div>
-                    <div id="stats2" class="vida2"></div>
+                    <div id="stats2" class="life2"></div>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
     <!--Screen4. Winner-->
     <section id="screen4" class="screens" style="display:none" onclick="cleanGame()">
         <div class="designScreen4">
-            <div class="ganador" id ="winner"></div>
+            <div class="win" id ="winner"></div>
         </div>
     </section>
 
