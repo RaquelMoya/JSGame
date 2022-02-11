@@ -35,7 +35,7 @@ class Pokemon {
     }
 };
 
-//Instanciando corredores
+//Instanciando personajes
 
 let pokemon1 = new Pokemon("pikachu", "1",  "electric", 150, 150, 80, 80, 100, 100, 1);
 let pokemon2 = new Pokemon("charmander", "2", "fire", 150, 150, 100, 80, 100, 80, 1);
